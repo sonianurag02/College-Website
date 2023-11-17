@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>               
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="course.html"> COURSE </a></li>
+                    <li><a href="blog.html"> BLOG </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> About Us </h1>
+    </section>
+
+    <!----------------------------------------- ABOUT US CONTENT ------------------------------------------>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>
+                    <h1> We are the world's largest University</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid provident necessitatibus
+                        natus ipsa iusto deleniti! Iusto, id beatae eaque maiores laboriosam maxime est recusandae
+                        doloremque obcaecati nobis atque? Aut, accusamus?Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Eveniet eius dolore, incidunt porro id ipsa temporibus nisi tempora 
+                        earum magni harum enim vitae dolor eum. Recusandae necessitatibus rem delectus rerum.
+                    </p>
+                    <a class="hero-btn red-btn" href=""> EXPLORE NOW </a>
+                </h1>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+   
+    <!------------------------------------------- FOOTER  ------------------------------------------------->
+    <section class="footer">
+        <h4> About Us </h4>
+        <p> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ipsam voluptas
+            incidunt aliquid <br> aut aspernatur fugit repellendus pariatur, a aperiam, architecto.
+        </p>
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <p> Made with <span class="heart" style="font-size: 20px">♥</span> by Anurag Soni </p>
+    </section>
+
+    <!---------------------------------- JAVASCRIPT FOR TOGGLE MENU ----------------------------------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
